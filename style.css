@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.reveiwsDiv{
+    background-color: #5B20D4;
+    width: 120px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    /*height: 60px;
+    *//*width: 100%;
+    */top: 110px;
+    left: -38px;
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+.reveiwsTxt{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    /* top: 10%; */
+   
+}
+.reveiwsTxt .star{
+    max-width: 16px;
+}
+.close{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+   padding-top: 5px;
+    background-color: #5B20D4;
+}
+.closeImg{
+    width: 20px;
+    line-height: 50px;
+}
+.commentBox{
+    
+}
