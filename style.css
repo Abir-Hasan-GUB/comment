@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .reveiwsDiv{
     background-color: #5B20D4;
     width: 120px;
@@ -11,9 +14,7 @@
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    /*height: 60px;
-    *//*width: 100%;
-    */top: 110px;
+    top: 110px;
     left: -38px;
     position: fixed;
     border-radius: 10px 10px 0 0;
@@ -30,7 +31,6 @@
     color: #FFFFFF;
     text-align: center;
     margin: 0;
-    /* top: 10%; */
    
 }
 .reveiwsTxt .star{
@@ -48,6 +48,8 @@
     line-height: 50px;
    padding-top: 5px;
     background-color: #5B20D4;
+    margin-left: 15px;
+    cursor: pointer;
 }
 .closeImg{
     width: 20px;
@@ -56,13 +58,15 @@
 .commentBox{
     width: 700px;
     background-color: #5B20D4;
-    height: 300px;
-    margin-left: 150px;
+    height: 270px;
+    margin-left: 30px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .activeUsers .acUserImg{
     height: 50px;
@@ -92,16 +96,18 @@
 }
 .allComments .singleComment{
     border-radius: 15px;
-    padding: 10px;
+    padding: 10px 15px;
     width: 100%;
     background-color: #fff;
-    height: 150px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    margin-bottom: 15px;
 }
-
+.allComments{
+    padding-top: 15px;
+}
 .commentAuthor{
     height: 70px;
     width: 70px;
@@ -122,7 +128,6 @@
 .userAndInfo{
     display: flex;
 }
-
 .recomended{
     font-size: 16px;
 }
@@ -130,7 +135,48 @@
     font-size: 14px;
     color: gray;
 }
-.singleComment{
+.commentController{
     display: flex;
     justify-content: space-between;
 }
+.description{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.moreLink{
+    color: #5B20D4;
+}
+.moreLinkCtrl{
+    text-decoration: none;
+    color: #5B20D4;
+}
+
+.closeBtnAndReviews{
+    display: flex;
+}
+.commentPanelPositionCtrl{
+    position: fixed;
+    top: 310px;
+}
+
+/* width */
+.commentBox::-webkit-scrollbar {
+    width: 10px;
+    padding: 10px;
+  }
+  
+  /* Track */
+  .commentBox::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+   
+  /* Handle */
+  .commentBox::-webkit-scrollbar-thumb {
+    background: rgba(211, 207, 207, 0.644); 
+  }
+  
+  /* Handle on hover */
+  .commentBox::-webkit-scrollbar-thumb:hover {
+    background: rgba(211, 207, 207, 0.924);
+  }
